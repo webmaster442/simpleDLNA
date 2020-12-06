@@ -17,12 +17,6 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <CodeAnalysisRuleSet>..\sdlna.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>sdlna.key.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
@@ -32,8 +26,5 @@
   <ItemGroup>
     <ProjectReference Include="..\server\server.csproj" />
     <ProjectReference Include="..\util\util.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sdlna.key.snk" />
   </ItemGroup>
 </Project>

@@ -27,12 +27,6 @@
     <CodeAnalysisRuleSet>..\sdlna.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>sdlna.key.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
     <ApplicationIcon>sdlna.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -68,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LICENSE" />
-    <None Include="sdlna.key.snk" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sdlna.ico" />
