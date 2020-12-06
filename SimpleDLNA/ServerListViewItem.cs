@@ -53,7 +53,7 @@ namespace NMaier.SimpleDlna.GUI
 
     private void BeginInvoke(Action func)
     {
-      ListView.BeginInvoke((Action)(() =>
+      ListView.Invoke((Action)(() =>
       {
         try {
           func();

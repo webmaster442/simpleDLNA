@@ -1,4 +1,5 @@
-﻿using System;
+/*
+using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Configuration.Install;
@@ -90,3 +91,4 @@ namespace NMaier.SimpleDlna.GUI
     }
   }
 }
+*/

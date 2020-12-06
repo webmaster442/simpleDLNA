@@ -4,7 +4,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <OutputType>Exe</OutputType>
     <RootNamespace>NMaier.SimpleDlna</RootNamespace>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net50-windows</TargetFramework>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -59,9 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />
-    <Compile Include="..\NgenInstaller.cs" Link="NgenInstaller.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="..\NgenInstaller.cs" Link="NgenInstaller.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

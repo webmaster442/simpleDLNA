@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -11,6 +11,7 @@ using NMaier.SimpleDlna.Utilities;
 
 namespace NMaier.SimpleDlna.Thumbnails
 {
+#warning PORT TO SKIA
   public sealed class ThumbnailMaker : Logging
   {
     private static readonly LeastRecentlyUsedDictionary<string, CacheItem> cache =

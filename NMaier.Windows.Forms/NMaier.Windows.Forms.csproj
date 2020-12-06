@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <AssemblyTitle>NMaier.Windows.Forms</AssemblyTitle>
     <Company>Nils Maier</Company>
     <Product>NMaier.Windows.Forms</Product>
@@ -10,6 +10,7 @@
     <Deterministic>false</Deterministic>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>

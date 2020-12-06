@@ -4,7 +4,8 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <OutputType>WinExe</OutputType>
     <RootNamespace>NMaier.SimpleDlna.GUI</RootNamespace>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net50-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -60,36 +61,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />
-    <Compile Include="..\NgenInstaller.cs" Link="NgenInstaller.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Update="FormAbout.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="..\NgenInstaller.cs" Link="NgenInstaller.cs" />
+    <Compile Update="FormAbout.cs" />
     <Compile Update="FormAbout.Designer.cs">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </Compile>
-    <Compile Update="FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormMain.cs" />
     <Compile Update="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Update="FormServer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormServer.cs" />
     <Compile Update="FormServer.Designer.cs">
       <DependentUpon>FormServer.cs</DependentUpon>
     </Compile>
-    <Compile Update="FormSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormSettings.cs" />
     <Compile Update="FormSettings.Designer.cs">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
-    <Compile Update="PathEnvironmentInstaller.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="PathEnvironmentInstaller.cs" />
     <EmbeddedResource Update="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>

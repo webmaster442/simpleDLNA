@@ -3,7 +3,8 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <RootNamespace>NMaier.SimpleDlna.FileMediaServer</RootNamespace>
     <AssemblyName>SimpleDlna.FileMediaServer</AssemblyName>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>bin\$(Configuration)\</OutputPath>
