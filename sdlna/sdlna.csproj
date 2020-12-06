@@ -4,7 +4,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <OutputType>Exe</OutputType>
     <RootNamespace>NMaier.SimpleDlna</RootNamespace>
-    <TargetFramework>net50-windows</TargetFramework>
+    <TargetFramework>net5.0-windows7.0</TargetFramework>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
