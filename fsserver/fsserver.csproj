@@ -3,7 +3,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <RootNamespace>NMaier.SimpleDlna.FileMediaServer</RootNamespace>
     <AssemblyName>SimpleDlna.FileMediaServer</AssemblyName>
-    <TargetFramework>net451</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>bin\$(Configuration)\</OutputPath>

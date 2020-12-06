@@ -4,7 +4,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <OutputType>WinExe</OutputType>
     <RootNamespace>NMaier.SimpleDlna.GUI</RootNamespace>
-    <TargetFramework>net451</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
