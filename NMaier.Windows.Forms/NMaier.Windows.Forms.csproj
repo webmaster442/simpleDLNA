@@ -25,9 +25,6 @@
     <AssemblyOriginatorKeyFile>NMaier.Windows.Forms.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Update="Form.cs">
       <SubType>Form</SubType>
     </Compile>
