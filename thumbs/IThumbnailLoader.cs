@@ -7,6 +7,6 @@ namespace NMaier.SimpleDlna.Thumbnails
   {
     DlnaMediaTypes Handling { get; }
 
-    MemoryStream GetThumbnail(object item, ref int width, ref int height);
+    Stream GetThumbnail(object item, ref int width, ref int height);
   }
 }
