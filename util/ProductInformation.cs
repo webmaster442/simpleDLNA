@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Reflection;
 
 namespace NMaier.SimpleDlna.Utilities
@@ -55,7 +55,7 @@ namespace NMaier.SimpleDlna.Utilities
           }
         }
         return Path.GetFileNameWithoutExtension(
-          Assembly.GetExecutingAssembly().CodeBase);
+          Assembly.GetExecutingAssembly().Location);
       }
     }
   }

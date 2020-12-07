@@ -3,22 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdlna", "sdlna\sdlna.csproj", "{C99E77FD-0728-4A2F-A9C0-47AAC7CAEFED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maier.SimpleDlna", "sdlna\Maier.SimpleDlna.csproj", "{C99E77FD-0728-4A2F-A9C0-47AAC7CAEFED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "server\server.csproj", "{232A96F6-A2BF-44C8-B623-6E411F6296F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMaier.SimpleDlna.Server", "server\NMaier.SimpleDlna.Server.csproj", "{232A96F6-A2BF-44C8-B623-6E411F6296F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fsserver", "fsserver\fsserver.csproj", "{50E06B21-E11A-42F0-81E2-0911E771E861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMaier.SimpleDlna.FileMediaServer", "fsserver\NMaier.SimpleDlna.FileMediaServer.csproj", "{50E06B21-E11A-42F0-81E2-0911E771E861}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thumbs", "thumbs\thumbs.csproj", "{EF29F98A-B8B6-4591-BA29-E71BCC308E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMaier.SimpleDlna.Thumbnails", "thumbs\NMaier.SimpleDlna.Thumbnails.csproj", "{EF29F98A-B8B6-4591-BA29-E71BCC308E98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "util", "util\util.csproj", "{A8960A7A-887C-40D7-9632-002E94BFC830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMaier.SimpleDlna.Utilities", "util\NMaier.SimpleDlna.Utilities.csproj", "{A8960A7A-887C-40D7-9632-002E94BFC830}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{4710D7C1-4ADC-4D3E-BD48-3295B7573B2A}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
-		NgenInstaller.cs = NgenInstaller.cs
 	EndProjectSection
 EndProject
 Global

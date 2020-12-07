@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -155,7 +155,6 @@ namespace NMaier.SimpleDlna.Utilities
         sti.UseShellExecute = false;
         sti.FileName = FFmpegExecutable;
         sti.Arguments = $"-i \"{file.FullName}\"";
-        sti.LoadUserProfile = false;
         sti.RedirectStandardError = true;
         p.Start();
         IDictionary<string, string> rv = new Dictionary<string, string>();
@@ -254,7 +253,6 @@ namespace NMaier.SimpleDlna.Utilities
           sti.UseShellExecute = false;
           sti.FileName = FFmpegExecutable;
           sti.Arguments = $"-i \"{file.FullName}\" -map s:0 -f srt pipe:";
-          sti.LoadUserProfile = false;
           sti.RedirectStandardOutput = true;
           p.Start();
 

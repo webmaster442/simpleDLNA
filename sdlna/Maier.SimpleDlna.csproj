@@ -56,9 +56,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\fsserver\fsserver.csproj" />
-    <ProjectReference Include="..\server\server.csproj" />
-    <ProjectReference Include="..\util\util.csproj" />
+    <ProjectReference Include="..\fsserver\NMaier.SimpleDlna.FileMediaServer.csproj" />
+    <ProjectReference Include="..\server\NMaier.SimpleDlna.Server.csproj" />
+    <ProjectReference Include="..\util\NMaier.SimpleDlna.Utilities.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LICENSE" />

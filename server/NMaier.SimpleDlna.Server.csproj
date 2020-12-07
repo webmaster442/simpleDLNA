@@ -53,7 +53,7 @@
     <Content Include="Resources\x_featurelist.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\util\util.csproj" />
+    <ProjectReference Include="..\util\NMaier.SimpleDlna.Utilities.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Types\MediaTypes.cs" />
