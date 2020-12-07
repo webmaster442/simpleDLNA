@@ -157,7 +157,6 @@ namespace NMaier.SimpleDlna.Thumbnails
         sti.UseShellExecute = false;
         sti.FileName = FFmpeg.FFmpegExecutable;
         sti.Arguments = $"-v quiet -ss {pos} -i pipe: -an -frames:v 1 -f image2  pipe:";
-        sti.LoadUserProfile = false;
         sti.RedirectStandardInput = true;
         sti.RedirectStandardOutput = true;
         p.Start();
@@ -187,7 +186,6 @@ namespace NMaier.SimpleDlna.Thumbnails
             sti.UseShellExecute = false;
             sti.FileName = FFmpeg.FFmpegExecutable;
             sti.Arguments = $"-v quiet -ss {best} -i \"{file.FullName}\" -an -frames:v 1 -f image2 pipe:";
-            sti.LoadUserProfile = false;
             sti.RedirectStandardOutput = true;
             p.Start();
 

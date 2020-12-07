@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Runtime.Serialization;
 using NMaier.SimpleDlna.Server;
@@ -23,17 +23,6 @@ namespace NMaier.SimpleDlna.FileMediaServer
     private bool warned;
 
     private int width = 384;
-
-    private Cover(SerializationInfo info, StreamingContext ctx)
-    {
-      bytes = info.GetValue("b", typeof (byte[])) as byte[];
-      width = info.GetInt32("w");
-      height = info.GetInt32("h");
-      var di = ctx.Context as DeserializeInfo;
-      if (di != null) {
-        file = di.Info;
-      }
-    }
 
     internal Cover(FileInfo aFile, Stream aStream)
     {

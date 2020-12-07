@@ -45,7 +45,6 @@
   <ItemGroup>
     <PackageReference Include="GetOptNet" Version="4.0.8" />
     <PackageReference Include="log4net" Version="2.0.12" />
-    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.6" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />

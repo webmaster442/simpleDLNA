@@ -20,6 +20,7 @@
     <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.9" />
     <PackageReference Include="log4net" Version="2.0.12" />
     <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
   </ItemGroup>
