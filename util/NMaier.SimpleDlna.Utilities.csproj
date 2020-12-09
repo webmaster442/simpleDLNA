@@ -3,10 +3,9 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <RootNamespace>NMaier.SimpleDlna.Utilities</RootNamespace>
     <AssemblyName>SimpleDlna.Utilities</AssemblyName>
-    <TargetFramework>net50</TargetFramework>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
