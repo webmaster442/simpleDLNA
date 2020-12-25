@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <RootNamespace>NMaier.SimpleDlna.FileMediaServer</RootNamespace>
+    <AssemblyName>SimpleDlna.FileMediaServer</AssemblyName>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.9" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\server\NMaier.SimpleDlna.Server.csproj" />
+    <ProjectReference Include="..\thumbs\NMaier.SimpleDlna.Thumbnails.csproj" />
+    <ProjectReference Include="..\util\NMaier.SimpleDlna.Utilities.csproj" />
+  </ItemGroup>
+</Project>

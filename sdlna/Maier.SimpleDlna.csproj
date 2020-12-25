@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NMaier.SimpleDlna</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>..\sdlna.ruleset</CodeAnalysisRuleSet>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sdlna.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GetOptNet" Version="4.0.8" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fsserver\NMaier.SimpleDlna.FileMediaServer.csproj" />
+    <ProjectReference Include="..\server\NMaier.SimpleDlna.Server.csproj" />
+    <ProjectReference Include="..\util\NMaier.SimpleDlna.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sdlna.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

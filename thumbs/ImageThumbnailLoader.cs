@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using NMaier.SimpleDlna.Server;
+using SkiaSharp;
 
 namespace NMaier.SimpleDlna.Thumbnails
 {
@@ -10,35 +11,43 @@ namespace NMaier.SimpleDlna.Thumbnails
   {
     public DlnaMediaTypes Handling => DlnaMediaTypes.Image;
 
-    public MemoryStream GetThumbnail(object item, ref int width,
-      ref int height)
+    public Stream GetThumbnail(object item, ref int width, ref int height)
     {
-      Image img;
+      SKImage img;
       var stream = item as Stream;
-      if (stream != null) {
-        img = Image.FromStream(stream);
+      if (stream != null)
+      {
+        img = SKImage.FromEncodedData(stream);
       }
-      else {
-        var fi = item as FileInfo;
-        if (fi != null) {
-          img = Image.FromFile(fi.FullName);
+      else
+      {
+        if (item is FileInfo fi)
+        {
+          using (var file = File.OpenRead(fi.FullName))
+          {
+            img = SKImage.FromEncodedData(file);
+          }
         }
-        else {
+        else
+        {
           throw new NotSupportedException();
         }
       }
-      using (img) {
-        using (var scaled = ThumbnailMaker.ResizeImage(
-          img, width, height, ThumbnailMakerBorder.Borderless)) {
+      using (img)
+      {
+        using (var scaled = ThumbnailMaker.ResizeImage(img, width, height, ThumbnailMakerBorder.Borderless))
+        {
           width = scaled.Width;
           height = scaled.Height;
-          var rv = new MemoryStream();
-          try {
-            scaled.Save(rv, ImageFormat.Jpeg);
-            return rv;
+          SKData encoded = null;
+          try
+          {
+            encoded = scaled.Encode(SKEncodedImageFormat.Jpeg, 100);
+            return encoded.AsStream();
           }
-          catch (Exception) {
-            rv.Dispose();
+          catch (Exception)
+          {
+            encoded?.Dispose();
             throw;
           }
         }

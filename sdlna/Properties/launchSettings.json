@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Maier.SimpleDlna": {
+      "commandName": "Project",
+      "commandLineArgs": "d:\\Video"
+    }
+  }
+}

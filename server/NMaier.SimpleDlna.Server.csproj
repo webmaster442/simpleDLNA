@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <RootNamespace>NMaier.SimpleDlna.Server</RootNamespace>
+    <AssemblyName>SimpleDlna.Server</AssemblyName>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs" Link="Properties\GlobalAssemblyInfo.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contentdirectory.xml" />
+    <None Include="Resources\description.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\browse.css" />
+    <None Include="Resources\connectionmanager.xml" />
+    <None Include="Resources\MSMediaReceiverRegistrar.xml" />
+    <Content Include="Resources\large.jpg" />
+    <Content Include="Resources\large.png" />
+    <Content Include="Resources\small.jpg" />
+    <Content Include="Resources\small.png" />
+    <Content Include="Resources\x_featurelist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\util\NMaier.SimpleDlna.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Types\MediaTypes.cs" />
+  </ItemGroup>
+</Project>
