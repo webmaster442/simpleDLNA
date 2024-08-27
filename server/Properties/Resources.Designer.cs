@@ -19,7 +19,7 @@ namespace NMaier.SimpleDlna.Server.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -104,8 +104,7 @@ namespace NMaier.SimpleDlna.Server.Properties {
         ///    &lt;dlna:X_DLNADOC&gt;M-DMS-1.50&lt;/dlna:X_DLNADOC&gt;
         ///    &lt;friendlyName/&gt;
         ///    &lt;deviceType&gt;urn:schemas-upnp-org:device:MediaServer:1&lt;/deviceType&gt;
-        ///    &lt;manufacturer&gt;tn123.org&lt;/manufacturer&gt;
-        ///    &lt;man [rest of string was truncated]&quot;;.
+        ///    &lt;manufacturer&gt;tn123.org&lt;/manufactu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string description {
             get {
